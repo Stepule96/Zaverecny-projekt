@@ -1,0 +1,23 @@
+html {
+  box-sizing: border-box;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+body {
+  color: #493323;
+  background-color: #ECDFCC;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 40px;
+}
+
+header {
+  background-color: #A5B68D;
+}
