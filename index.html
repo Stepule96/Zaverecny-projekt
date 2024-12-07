@@ -8,86 +8,102 @@
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     
 
 <!--Hlavička stránky-->
 
-<header class="hlavicka">
-    <h1 class="title">Tetička Anička</h1>
+<header class="header">
+
+    <a class="nadpis" href="#">Tetička Anička</a>
+
     <nav class="menu">
-        <ul>
-            <li><a href="#">Domů</a></li>
-            <li><a href="#">O mně</a></li>
-            <li><a href="#">Hlídání dětí</a></li>
-            <li><a href="#">Péče o zvířata</a></li>
-            <li><a href="#">Reference</a></li>
-            <li><a href="#">Kontakt</a></li>
+
+        <input type="checkbox" class="checkbox" id="menu-checkbox">
+		<label for="menu-checkbox" class="toggler"><img class="svg" src="images/svg/menu.svg" alt="menu"></label>
+
+        <ul class="list">
+            <li class="item"><a class="link" href="#">Domů</a></li>
+            <li class="item"><a class="link" href="#">O mně</a></li>
+            <li class="item"><a class="link" href="#">Hlídání dětí</a></li>
+            <li class="item"><a class="link" href="#">Péče o zvířata</a></li>
+            <li class="item"><a class="link" href="#">Reference</a></li>
+            <li class="item"><a class="link" href="#">Kontakt</a></li>
         </ul>
     </nav>
 </header>
-
-<!--Úvodní foto-->
-
-<div class="uvodni">
-    <img src="images/uvodni.jpg" alt="Úvodní fotka">
-</div>
 
 <!--Konec hlavičky-->
 
 <!--Začátek obsahu stránky-->
 
-<main class="hlavni">
+
+<div class="uvodni">
+    <img class="uvodni" src="images/uvodni.jpg" alt="Úvodní fotka">
+</div>
+
+
+<main class="main">
+    
     <section class="uvod">
-        <h2>Milí rodiče, vítejte na stránkách věnovaných péči o vaše nejmenší i vaše zvířecí kamarády!</h2>
-        <p>Jsem Anička, profesionální chůva a milovnice přírody, která se s láskou stará o děti i domácí mazlíčky. 
+        <h2 class="nadpis">Milí rodiče, vítejte na stránkách věnovaných péči o vaše nejmenší i vaše zvířecí kamarády!</h2>
+        <p class="text">Jsem Anička, profesionální chůva a milovnice přírody, která se s láskou stará o děti i domácí mazlíčky. 
             Díky bohatým zkušenostem z dětských táborů, zdravotnickému vzdělání a hlubokému vztahu k přírodě nabízím bezpečné, láskyplné a inspirující prostředí pro rozvoj vašich dětí i pohodu vašich zvířat. Vaše děti i mazlíčci u mě najdou péči plnou radosti, a prostor pro to, aby byly samy sebou. Těším se na setkání a společné zážitky!</p>
     </section>
 
 <!--Sekce Služby-->
 
-    <section class="Nabizim">
-        <h2>Co nabízím</h2>
+    <section class="sluzby">
+        <h2 class="nadpis">Co nabízím</h2>
             <div class="sluzby">
                 <div class="box">
-                    <img src="images/kids/v lese.png">
-                    <h3>Hlídání dětí</h2>
+                    <img class="foto" src="images/kids/v lese.png">
+                    <h3 class="nazev">Hlídání dětí</h3>
+                </div>
+                
+                <div class="tlacitko">
+                    <a class="button button-first" href="#">Více informací</a>
                 </div>
 
                 <div class="box">
-                    <img src="images/animals/anicka a pes.jpeg">
-                    <h3>Péče o zvířata</h2>
+                    <img class="foto" src="images/animals/anicka a pes.jpeg">
+                    <h3 class="nazev">Péče o zvířata</h3>
                 </div>
-            </div>
-            <div class="tlacitka">
-                <a class="tlacitko prvni" href="#">Více informací</a>
-                <a class="tlacitko druhy" href="#">Více informací</a>
-            </div>
+                
+                <div class="tlacitko">
+                <a class="button button-second" href="#">Více informací</a>
+                </div>
      </section>
 
 <!--Sekce Reference-->
 
      <section class="Reference">
-        <h2>Reference</h2>
-            <div class="ref">
+        <h2 class="nadpis-reference">Reference</h2>
+            
+        <div class="grid-reference">
                 <div class="boxik">
                     <p>,,Aničku jsme měli příležitost poznat, když jsme se třetím miminkem potřebovali krátkodobě pomoci. Musím ovšem říct, že hned od prvního okamžiku jsme měli pocit, že ji známe už dlouho 😊. Velmi příjemná, milá, usměvavá, klidná, empatická a vstřícná slečna, co si poradila nejen s úklidem, ale i s dětmi. Moc ji děkujeme a jsme rádi, že jsme měli možnost ji poznat. Moc dobře jsme se s ní cítili a děti ji měly rády od prvního okamžiku.''</p>
                     <p>Martin T.</p>
                 </div>
+
                 <div class="boxik">
                     <p>,,Slečna hlídala našeho pejska Sama. Bylo to jeho první hlídání a měl jsem z toho trochu obavy, ale hlídačka byla úžasná. Se Samem si vyhrála a vyběhala. Byla schopné se o něj postarat ve všech směrech. Ještě jednou děkujeme a zas někdy příště.''</p>
                     <p>Lukáš L.</p>
                 </div>
+
                 <div class="boxik">
                     <p>,,Anička pečuje o naši malou dcerku od jejích dvou měsíců už skoro rok. Je spolehlivý a zodpovědný člověk. Nejvíce si cením zdravosti v jejím přístupu, ať se děje cokoliv, řeší situaci zdravě rozumně a zároveň s velkou péčí, vlídností a ohledem k dítěti. Je vidět, že má o dítě velký zájem, péče vychází vždy z potřeb dítěte, zároveň umí citlivě respektovat režim dítěte a to při dodržování zdravých hranic. Sama je otevřený a přímý člověk, což znamená, že každý společný kontakt je příjemný a fajn. Měli jsme na Aničku velké štěstí.''</p>
                     <p>Irena S.</p>
                 </div>
+            
+            <div class="tlacitko">
+                <a class="button button-third" href="#">Více referencí</a>
             </div>
-            <div class="tlacitka">
-                <a class="tlacitko treti" href="#">Více referencí</a>
-            </div>
+        </div>
+
      </section>
 
 </main>
@@ -96,12 +112,30 @@
 
 <!--Patička-->
 
-<footer class="paticka">
-    <h2>Kontakt</h2>
-    <p>Anna Nejedlá</p><br>
-    <p>+420 603 524 824</p><br>
-    <a>???</a><br>
-    <a>chuva_z_benesova</a>
+<footer class="footer">
+
+    <div class="contact">
+
+            <h2 class="nadpis">Kontakt</h2>
+
+            <p class="kontakt">
+                Anna Nejedlá
+            </p>
+            <p class="kontakt">
+                <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                +420 603 524 824
+            </p>
+            <p class="kontakt">
+                <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                <a class="mail" href="mailto:hlidani.tetickaanicka@gmail.com">hlidani.tetickaanicka@gmail.com</a>
+            </p>
+            <p class="kontakt">
+                <span class="icon"><i class="fa fa-instagram"></i></span>
+                <a class="instagram" href="https://www.instagram.com/chuva_z_benesova?igsh=ZDRqdXBxb2YzeXlj">chuva_z_benesova</a>
+            </p>
+
+    </div>
+
 </footer>
 
 </body>
