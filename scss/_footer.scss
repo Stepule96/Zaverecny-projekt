@@ -1,0 +1,50 @@
+@use "colors";
+@use "fonts";
+@use "border";
+
+.footer{
+    background-color: colors.$c-header-background;
+
+    &__main{
+        text-align: center;
+        color: colors.$c-text;
+        padding: 20px;
+    }
+
+    &__title{
+        padding-bottom: 13px;
+        font-size: 30px;
+        color: colors.$c-text;
+        margin: 0;
+        font-family: fonts.$font-title;
+        font-weight: bold;
+        
+    }
+    &__title::after{
+        content: "";
+        display: block;
+        width: 40px;
+        height: 2px;
+        background-color: colors.$c-title;
+        margin: 5px auto 0 auto;
+    
+    }
+
+    &__contact{
+        margin: 0;
+        line-height: 1.8;
+        font-family: fonts.$font-text;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    &__link{
+        color: colors.$c-text;
+        text-decoration: none;
+    }
+    a:hover{
+        color: colors.$c-box;
+    }
+
+}
+

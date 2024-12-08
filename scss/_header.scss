@@ -1,0 +1,68 @@
+@use "colors";
+@use "fonts";
+@use "border";
+
+
+
+.header{
+    background-color: colors.$c-header-background;
+
+
+    &__title{
+        font-family: fonts.$font-title;
+        font-size: 50px;
+        font-weight: bold;
+        text-decoration: none;
+        color: colors.$c-text;
+        display: inline-block;
+        padding: 15px 30px;
+    }
+}
+
+.svg{
+    width: 25px;
+    height: 30px;
+    position: absolute;
+    right: 30px;
+    top: 31px;
+
+}
+
+.menu__checkbox{
+    position: absolute;
+    left: -9999px;
+}
+
+.menu__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    display: none;
+}
+
+.menu__item{
+    border-bottom: 1px solid colors.$c-text;
+    padding: 5px 0;
+    background-color: colors.$c-header-background;
+}
+
+.menu__link{
+    font-family: fonts.$font-title;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: colors.$c-text;
+    display: block;
+}
+
+.menu__checkbox:checked ~ .menu__list{
+    display: block;
+}
+
+.menu__link:hover{
+    color: colors.$c-body;
+    text-decoration: underline;
+}
+
+

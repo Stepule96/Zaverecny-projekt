@@ -1,0 +1,23 @@
+@use "colors";
+@use "fonts";
+@use "border";
+
+
+.button{
+    background-color: colors.$c-button;
+    color: colors.$c-text;
+    font-family: fonts.$font-text;
+    font-size: 10px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: border.$box-radius;
+   
+    
+}
+
+.button:hover{
+    color: colors.$c-box;
+    border: border.$box-border;
+}

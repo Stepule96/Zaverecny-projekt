@@ -1,3 +1,117 @@
+.button {
+  background-color: #DA8359;
+  color: #493323;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 15px;
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+.button:hover {
+  color: #FFF9F2;
+  border: 1px solid #A5B68D;
+}
+
+.header {
+  background-color: #A5B68D;
+}
+.header__title {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #493323;
+  display: inline-block;
+  padding: 15px 30px;
+}
+
+.svg {
+  width: 25px;
+  height: 30px;
+  position: absolute;
+  right: 30px;
+  top: 31px;
+}
+
+.menu__checkbox {
+  position: absolute;
+  left: -9999px;
+}
+
+.menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  display: none;
+}
+
+.menu__item {
+  border-bottom: 1px solid #493323;
+  padding: 5px 0;
+  background-color: #A5B68D;
+}
+
+.menu__link {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  color: #493323;
+  display: block;
+}
+
+.menu__checkbox:checked ~ .menu__list {
+  display: block;
+}
+
+.menu__link:hover {
+  color: #ECDFCC;
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #A5B68D;
+}
+.footer__main {
+  text-align: center;
+  color: #493323;
+  padding: 20px;
+}
+.footer__title {
+  padding-bottom: 13px;
+  font-size: 30px;
+  color: #493323;
+  margin: 0;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: bold;
+}
+.footer__title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #3F4F0B;
+  margin: 5px auto 0 auto;
+}
+.footer__contact {
+  margin: 0;
+  line-height: 1.8;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+.footer__link {
+  color: #493323;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #FFF9F2;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -18,58 +132,6 @@ body {
   margin: 0 30px 0 30px;
 }
 
-.header {
-  background-color: #A5B68D;
-  position: relative;
-}
-.header .nadpis {
-  font-family: "Amatic SC", sans-serif;
-  font-size: 50px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #493323;
-  display: inline-block;
-  padding: 15px 20px;
-}
-.header .list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  display: none;
-}
-.header .link {
-  font-family: "Amatic SC", sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  text-decoration: none;
-  color: #493323;
-  display: block;
-}
-.header .checkbox {
-  position: absolute;
-  left: -999px;
-}
-.header .item {
-  border-bottom: 1px solid #493323;
-  padding: 5px 0;
-  background-color: #A5B68D;
-}
-.header .checkbox:checked ~ .list {
-  display: block;
-}
-.header .link:hover {
-  color: #ECDFCC;
-  text-decoration: underline;
-}
-.header .svg {
-  width: 25px;
-  height: 30px;
-  position: absolute;
-  right: 30px;
-  top: 31px;
-}
-
 .uvodni img {
   width: 100%;
 }
@@ -80,6 +142,7 @@ body {
   margin-bottom: 40px;
   border: 1px solid #A5B68D;
   border-radius: 30px;
+  box-shadow: 1px 1px 5px #A5B68D;
 }
 .uvod .text {
   font-family: "Advent Pro", sans-serif;
@@ -87,6 +150,7 @@ body {
   text-align: center;
   margin: 0;
   font-size: 15px;
+  font-weight: 500;
 }
 .uvod .nadpis {
   text-align: center;
@@ -103,11 +167,19 @@ body {
 
 .sluzby .nadpis {
   text-align: center;
-  font-size: 28px;
+  font-size: 30px;
   font-family: "Amatic SC", sans-serif;
   color: #3F4F0B;
-  margin-bottom: 20px;
-  margin-top: 0;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+.sluzby .nadpis::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #3F4F0B;
+  margin: 5px auto 0 auto;
 }
 .sluzby .foto {
   border-radius: 30px 30px 0 0;
@@ -120,6 +192,7 @@ body {
   border-radius: 30px;
   border: 1px solid #A5B68D;
   width: 300px;
+  box-shadow: 1px 1px 5px #A5B68D;
 }
 .sluzby .nazev {
   font-family: "Amatic SC", sans-serif;
@@ -132,52 +205,61 @@ body {
 .sluzby .tlacitko {
   margin: auto;
   text-align: center;
-  margin-bottom: 30px;
-  margin-top: 10px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+@media screen and (min-width: 600px) {
+  .sluzby .box {
+    width: 350px;
+  }
 }
 
-.button {
-  background-color: #DA8359;
-  color: #493323;
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  text-decoration: none;
-  display: inline-block;
-  padding: 5px 15px;
-  font-weight: bold;
-  border-radius: 30px;
-}
-
-.button:hover {
-  background-color: #A5B68D;
-  border: 1px solid #A5B68D;
-}
-
-.footer {
-  background-color: #A5B68D;
-}
-.footer .contact {
-  text-align: center;
-  color: #493323;
-  padding: 20px;
-}
-.footer .nadpis {
-  padding-bottom: 13px;
-  font-size: 30px;
-  color: #493323;
-  margin: 0;
+.reference .nadpis {
   font-family: "Amatic SC", sans-serif;
-  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  color: #3F4F0B;
 }
-.footer .kontakt {
+.reference .nadpis::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #3F4F0B;
+  margin: 5px auto 0 auto;
+}
+.reference .boxik {
+  background-color: #FFF9F2;
+  border-radius: 30px 30px 0 30px;
+  width: 300px;
+  margin: 20px auto;
+  border: 1px solid #A5B68D;
+  box-shadow: 1px 1px 5px #A5B68D;
+}
+.reference .text {
+  font-size: 13px;
+  text-align: left;
+  padding: 20px;
   margin: 0;
-  line-height: 1.8;
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px;
-  font-weight: 500;
+  line-height: 1.4;
+  font-style: italic;
 }
-.footer .mail,
-.footer .instagram {
-  color: #493323;
-  text-decoration: none;
+.reference .jmeno {
+  font-size: 11px;
+  text-align: right;
+  padding: 5px 15px 15px 0;
+  margin: 0;
+}
+.reference .tlacitko {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+@media screen and (min-width: 600px) {
+  .reference .boxik {
+    width: 350px;
+  }
 }
