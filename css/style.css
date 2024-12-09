@@ -73,6 +73,32 @@
   text-decoration: underline;
 }
 
+@media screen and (min-width: 900px) {
+  .menu__toggler {
+    display: none;
+  }
+  .menu__list {
+    display: flex !important;
+    justify-content: space-around;
+  }
+  .header__title {
+    flex-grow: 1;
+    padding: 0;
+    padding-left: 30px;
+  }
+  .menu {
+    flex-basis: 45%;
+  }
+  .header {
+    display: flex;
+    height: 80px;
+    align-items: center;
+  }
+  .menu__item {
+    border-bottom: 0;
+    padding: 0;
+  }
+}
 .footer {
   background-color: #A5B68D;
 }
@@ -112,6 +138,16 @@
   color: #FFF9F2;
 }
 
+@media screen and (min-width: 900px) {
+  .footer__title,
+  .footer__contact {
+    text-align: left;
+    padding-left: 10px;
+  }
+  .footer__title::after {
+    margin-left: 0;
+  }
+}
 html {
   box-sizing: border-box;
 }

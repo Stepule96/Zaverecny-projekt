@@ -19,6 +19,7 @@
         font-family: fonts.$font-title;
         font-weight: bold;
         
+        
     }
     &__title::after{
         content: "";
@@ -45,6 +46,17 @@
     a:hover{
         color: colors.$c-box;
     }
+        
 
 }
 
+@media screen and (min-width:900px){
+    .footer__title,
+    .footer__contact{
+        text-align: left;
+        padding-left: 10px;
+    }
+    .footer__title::after{
+        margin-left: 0;
+    }
+}
