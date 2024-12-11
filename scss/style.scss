@@ -64,7 +64,11 @@ body{
         margin: 0 20px 0 20px;
         background-color: colors.$c-box;
     }
+    
 }
+
+
+
 
 
 //Služby
@@ -120,7 +124,7 @@ body{
     }
     
 
-    @media screen and (min-width: 600px){
+    @media screen and (min-width: 1000px){
         .box{
             width: 350px;
         }
@@ -183,13 +187,11 @@ body{
         margin-bottom: 40px;
         margin-top: 20px;
     }
-    @media screen and (min-width: 600px){
-        .boxik{
-            width: 350px;
-        }
-    }
     
 }
+
+    
+
 
 
 

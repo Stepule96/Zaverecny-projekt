@@ -64,7 +64,7 @@
     text-decoration: underline;
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 1000px){
     .menu__toggler{
         display: none;
     }
@@ -77,9 +77,8 @@
         flex-grow: 1;
         padding: 0;
         padding-left: 30px;
+        font-size: 60px;
         
-      
-       
     }
     .menu{
         flex-basis: 45%;
@@ -88,7 +87,7 @@
 
     .header{
         display: flex;
-        height: 80px; 
+        height: 100px; 
         align-items: center;
         
         
@@ -96,7 +95,11 @@
     .menu__item{
         border-bottom: 0;
         padding: 0;
+
         
+    }
+    .menu__link{
+        font-size: 25px;
     }
   
 }
