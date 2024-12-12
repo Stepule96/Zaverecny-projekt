@@ -1,0 +1,47 @@
+@use "colors";
+@use "fonts";
+@use "border";
+@use "buttons";
+@use "header";
+@use "footer";
+
+
+.childcare{
+    display: grid;
+    
+    &__title{
+        font-family: fonts.$font-title;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 30px;
+        color: colors.$c-title;
+    
+    }
+    &__title::after{
+        content: "";
+        display: block;
+        width: 40px;
+        height: 2px;
+        background-color: colors.$c-title;
+        margin: 5px auto 0 auto;
+        }
+    &__contents{
+        margin: auto;
+        width: 100%;
+        background-color: colors.$c-box;
+        border-radius: border.$box-radius;
+        border: border.$box-border;
+        box-shadow: border.$box-shadow;
+        margin-bottom: 20px;
+    }
+    &__image{
+        width: 100%;
+        height: auto;
+        border-radius: 30px 30px 30px 30px;
+        padding: 10px;
+    }
+    &__text{
+        padding: 0 20px 20px 20px;
+    }
+
+}

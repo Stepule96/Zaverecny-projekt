@@ -1,0 +1,189 @@
+@use "colors";
+@use "fonts";
+@use "border";
+@use "buttons";
+@use "header";
+@use "footer";
+
+
+//ÚVODNÍ OBRÁZEK//
+.intro{
+    &__img{
+        width: 100%;
+        display: block;
+    }
+}
+
+//ÚVOD//
+
+.main-contents{
+    display: grid;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.introtext{
+        background-color: colors.$c-box;
+        margin:auto;
+        border-radius: border.$box-radius;
+        border: border.$box-border;
+        box-shadow: border.$box-shadow;
+        width: 100%;
+        display: grid;
+
+        @media screen and (min-width: 1000px){
+            width: 70%;
+
+        }
+
+    &__description{
+        font-family: fonts.$font-main;
+        padding: 0 15px 15px 15px;
+        text-align: center;
+        margin: 0;
+        font-size: 15px;
+        font-weight: 500;
+
+        p{
+            margin: 0;
+        }
+
+        @media screen and (min-width: 1000px){
+            font-size: 20px;
+            padding: 0 30px 20px 30px;
+
+        }
+    }
+    &__title{
+        text-align: center;
+        padding: 15px;
+        margin: 0;
+        h2{
+            margin: 0;
+            font-size: 24px;
+            font-family: fonts.$font-title;
+            color: colors.$c-title;
+            @media screen and (min-width: 1000px){
+                font-size: 30px;
+            }
+        }
+    }
+    &__icon{
+        display: none;
+        @media screen and (min-width: 1000px){
+            display: block;
+            width: 70px;
+
+        }
+    }
+
+}
+
+
+//SLUŽBY//
+
+.services{
+
+    &__title{
+        text-align: center;
+        font-size: 30px;
+        font-family: fonts.$font-title;
+        color: colors.$c-title;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    &__title::after{
+        content: "";
+        display: block;
+        width: 40px;
+        height: 2px;
+        background-color: colors.$c-title;
+        margin: 5px auto 0 auto;
+    }
+    
+    &__image{
+        border-radius: 30px 30px 0 0;
+        width: 100%;
+        height: auto;
+    
+    }
+    &__item{
+        background-color: colors.$c-box;
+        margin:auto;
+        border-radius: border.$box-radius;
+        border: border.$box-border;
+        width: 100%;
+        box-shadow: border.$box-shadow;
+    }
+   
+    &__name{
+        font-family: fonts.$font-title;
+        color: colors.$c-title;
+        margin: 0;
+        text-align: center;
+        padding: 6px;
+        font-size: 23px;
+    }
+    &__button{
+        margin: auto;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+}
+
+
+//REFERENCE
+
+.home-references{
+
+    &__title{
+        font-family: fonts.$font-title;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 30px;
+        color: colors.$c-title;
+    
+    }
+    &__title::after{
+        content: "";
+        display: block;
+        width: 40px;
+        height: 2px;
+        background-color: colors.$c-title;
+        margin: 5px auto 0 auto;
+        
+    
+    }
+    &__item{
+        background-color: colors.$c-box;
+        border-radius: border.$ref-radius;
+        width: 100%;
+        margin: 20px auto;
+        border: border.$box-border;
+        box-shadow: border.$box-shadow;
+       
+    }
+    &__text{
+        font-size: 13px;
+        text-align: left;
+        padding: 20px;
+        margin: 0;
+        line-height: 1.4;
+        font-style: italic;
+    }
+
+    &__name{
+        font-size: 11px;
+        text-align: right;
+        padding: 5px 15px 15px 0;
+        margin: 0;
+    }
+
+    &__button{
+        margin: auto;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+}

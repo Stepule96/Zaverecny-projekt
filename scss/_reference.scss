@@ -1,0 +1,53 @@
+@use "colors";
+@use "fonts";
+@use "border";
+@use "buttons";
+@use "header";
+@use "footer";
+
+
+.references{
+
+    &__title{
+        font-family: fonts.$font-title;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 30px;
+        color: colors.$c-title;
+    
+    }
+    &__title::after{
+        content: "";
+        display: block;
+        width: 40px;
+        height: 2px;
+        background-color: colors.$c-title;
+        margin: 5px auto 0 auto;
+        
+    }
+    &__item{
+        background-color: colors.$c-box;
+        border-radius: border.$ref-radius;
+        width: 100%;
+        margin: 20px auto;
+        border: border.$box-border;
+        box-shadow: border.$box-shadow;
+       
+    }
+    &__text{
+        font-size: 13px;
+        text-align: left;
+        padding: 20px;
+        margin: 0;
+        line-height: 1.4;
+        font-style: italic;
+    }
+
+    &__name{
+        font-size: 11px;
+        text-align: right;
+        padding: 5px 15px 15px 0;
+        margin: 0;
+    }
+    
+}

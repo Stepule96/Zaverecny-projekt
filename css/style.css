@@ -253,6 +253,324 @@
   }
 }
 
+.references__title {
+  font-family: "Amatic SC", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #3F4F0B;
+}
+.references__title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #3F4F0B;
+  margin: 5px auto 0 auto;
+}
+.references__item {
+  background-color: #FFF9F2;
+  border-radius: 30px 30px 0 30px;
+  width: 100%;
+  margin: 20px auto;
+  border: 1px solid #A5B68D;
+  box-shadow: 1px 1px 5px #A5B68D;
+}
+.references__text {
+  font-size: 13px;
+  text-align: left;
+  padding: 20px;
+  margin: 0;
+  line-height: 1.4;
+  font-style: italic;
+}
+.references__name {
+  font-size: 11px;
+  text-align: right;
+  padding: 5px 15px 15px 0;
+  margin: 0;
+}
+
+.intro__img {
+  width: 100%;
+  display: block;
+}
+
+.main-contents {
+  display: grid;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.introtext {
+  background-color: #FFF9F2;
+  margin: auto;
+  border-radius: 30px;
+  border: 1px solid #A5B68D;
+  box-shadow: 1px 1px 5px #A5B68D;
+  width: 100%;
+  display: grid;
+}
+@media screen and (min-width: 1000px) {
+  .introtext {
+    width: 70%;
+  }
+}
+.introtext__description {
+  font-family: "Advent Pro", sans-serif;
+  padding: 0 15px 15px 15px;
+  text-align: center;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+.introtext__description p {
+  margin: 0;
+}
+@media screen and (min-width: 1000px) {
+  .introtext__description {
+    font-size: 20px;
+    padding: 0 30px 20px 30px;
+  }
+}
+.introtext__title {
+  text-align: center;
+  padding: 15px;
+  margin: 0;
+}
+.introtext__title h2 {
+  margin: 0;
+  font-size: 24px;
+  font-family: "Amatic SC", sans-serif;
+  color: #3F4F0B;
+}
+@media screen and (min-width: 1000px) {
+  .introtext__title h2 {
+    font-size: 30px;
+  }
+}
+.introtext__icon {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .introtext__icon {
+    display: block;
+    width: 70px;
+  }
+}
+
+.services__title {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Amatic SC", sans-serif;
+  color: #3F4F0B;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.services__title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #3F4F0B;
+  margin: 5px auto 0 auto;
+}
+.services__image {
+  border-radius: 30px 30px 0 0;
+  width: 100%;
+  height: auto;
+}
+.services__item {
+  background-color: #FFF9F2;
+  margin: auto;
+  border-radius: 30px;
+  border: 1px solid #A5B68D;
+  width: 100%;
+  box-shadow: 1px 1px 5px #A5B68D;
+}
+.services__name {
+  font-family: "Amatic SC", sans-serif;
+  color: #3F4F0B;
+  margin: 0;
+  text-align: center;
+  padding: 6px;
+  font-size: 23px;
+}
+.services__button {
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.home-references__title {
+  font-family: "Amatic SC", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #3F4F0B;
+}
+.home-references__title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #3F4F0B;
+  margin: 5px auto 0 auto;
+}
+.home-references__item {
+  background-color: #FFF9F2;
+  border-radius: 30px 30px 0 30px;
+  width: 100%;
+  margin: 20px auto;
+  border: 1px solid #A5B68D;
+  box-shadow: 1px 1px 5px #A5B68D;
+}
+.home-references__text {
+  font-size: 13px;
+  text-align: left;
+  padding: 20px;
+  margin: 0;
+  line-height: 1.4;
+  font-style: italic;
+}
+.home-references__name {
+  font-size: 11px;
+  text-align: right;
+  padding: 5px 15px 15px 0;
+  margin: 0;
+}
+.home-references__button {
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.about {
+  display: grid;
+  margin-bottom: 30px;
+  gap: 1rem;
+}
+.about__title {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Amatic SC", sans-serif;
+  color: #3F4F0B;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.about__title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #3F4F0B;
+  margin: 5px auto 0 auto;
+}
+.about__contents {
+  margin: auto;
+  width: 100%;
+  background-color: #FFF9F2;
+  border-radius: 30px;
+  border: 1px solid #A5B68D;
+  box-shadow: 1px 1px 5px #A5B68D;
+}
+.about__image {
+  width: 100%;
+  height: auto;
+  border-radius: 30px 30px 0 0;
+}
+.about__gallery {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  gap: 1rem;
+}
+.about__gallery-img {
+  width: 100%;
+  border-radius: 30px 30px 30px 30px;
+  display: block;
+  border: 1px solid #A5B68D;
+}
+.about__text-paragraph {
+  padding: 0 20px 0 20px;
+  font-family: "Advent Pro", sans-serif;
+  font-weight: 500;
+}
+
+.childcare {
+  display: grid;
+}
+.childcare__title {
+  font-family: "Amatic SC", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #3F4F0B;
+}
+.childcare__title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #3F4F0B;
+  margin: 5px auto 0 auto;
+}
+.childcare__contents {
+  margin: auto;
+  width: 100%;
+  background-color: #FFF9F2;
+  border-radius: 30px;
+  border: 1px solid #A5B68D;
+  box-shadow: 1px 1px 5px #A5B68D;
+  margin-bottom: 20px;
+}
+.childcare__image {
+  width: 100%;
+  height: auto;
+  border-radius: 30px 30px 30px 30px;
+  padding: 10px;
+}
+.childcare__text {
+  padding: 0 20px 20px 20px;
+}
+
+.petcare {
+  display: grid;
+}
+.petcare__title {
+  font-family: "Amatic SC", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #3F4F0B;
+}
+.petcare__title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #3F4F0B;
+  margin: 5px auto 0 auto;
+}
+.petcare__contents {
+  margin: auto;
+  width: 100%;
+  background-color: #FFF9F2;
+  border-radius: 30px;
+  border: 1px solid #A5B68D;
+  box-shadow: 1px 1px 5px #A5B68D;
+  margin-bottom: 20px;
+}
+.petcare__image {
+  width: 100%;
+  height: auto;
+  border-radius: 30px 30px 30px 30px;
+  padding: 10px;
+}
+.petcare__text {
+  padding: 0 20px 20px 20px;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -271,131 +589,4 @@ body {
 
 .main {
   margin: 0 30px 0 30px;
-}
-
-.uvodni img {
-  width: 100%;
-}
-
-.uvod {
-  background-color: #FFF9F2;
-  margin-top: 30px;
-  margin-bottom: 40px;
-  border: 1px solid #A5B68D;
-  border-radius: 30px;
-  box-shadow: 1px 1px 5px #A5B68D;
-}
-.uvod .text {
-  font-family: "Advent Pro", sans-serif;
-  padding: 0 15px 15px 15px;
-  text-align: center;
-  margin: 0;
-  font-size: 15px;
-  font-weight: 500;
-}
-.uvod .nadpis {
-  text-align: center;
-  font-size: 24px;
-  padding: 15px;
-  font-family: "Amatic SC", sans-serif;
-  margin: 0;
-  color: #3F4F0B;
-}
-.uvod .box {
-  margin: 0 20px 0 20px;
-  background-color: #FFF9F2;
-}
-
-.sluzby .nadpis {
-  text-align: center;
-  font-size: 30px;
-  font-family: "Amatic SC", sans-serif;
-  color: #3F4F0B;
-  margin-bottom: 30px;
-  margin-top: 40px;
-}
-.sluzby .nadpis::after {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 2px;
-  background-color: #3F4F0B;
-  margin: 5px auto 0 auto;
-}
-.sluzby .foto {
-  border-radius: 30px 30px 0 0;
-  width: 100%;
-  height: auto;
-}
-.sluzby .box {
-  background-color: #FFF9F2;
-  margin: auto;
-  border-radius: 30px;
-  border: 1px solid #A5B68D;
-  width: 300px;
-  box-shadow: 1px 1px 5px #A5B68D;
-}
-.sluzby .nazev {
-  font-family: "Amatic SC", sans-serif;
-  color: #3F4F0B;
-  margin: 0;
-  text-align: center;
-  padding: 6px;
-  font-size: 23px;
-}
-.sluzby .tlacitko {
-  margin: auto;
-  text-align: center;
-  margin-bottom: 40px;
-  margin-top: 20px;
-}
-@media screen and (min-width: 1000px) {
-  .sluzby .box {
-    width: 350px;
-  }
-}
-
-.reference .nadpis {
-  font-family: "Amatic SC", sans-serif;
-  text-align: center;
-  font-size: 30px;
-  margin-bottom: 30px;
-  margin-top: 40px;
-  color: #3F4F0B;
-}
-.reference .nadpis::after {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 2px;
-  background-color: #3F4F0B;
-  margin: 5px auto 0 auto;
-}
-.reference .boxik {
-  background-color: #FFF9F2;
-  border-radius: 30px 30px 0 30px;
-  width: 300px;
-  margin: 20px auto;
-  border: 1px solid #A5B68D;
-  box-shadow: 1px 1px 5px #A5B68D;
-}
-.reference .text {
-  font-size: 13px;
-  text-align: left;
-  padding: 20px;
-  margin: 0;
-  line-height: 1.4;
-  font-style: italic;
-}
-.reference .jmeno {
-  font-size: 11px;
-  text-align: right;
-  padding: 5px 15px 15px 0;
-  margin: 0;
-}
-.reference .tlacitko {
-  margin: auto;
-  text-align: center;
-  margin-bottom: 40px;
-  margin-top: 20px;
 }
