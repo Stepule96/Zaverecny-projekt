@@ -1,47 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tetička Anička</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    
+---
+layout: template.njk
+title: Hlídání dětí
+---
 
-<!--Hlavička stránky-->
 
-<header class="header">
-
-    <a class="header__title" href="#">Tetička Anička</a>
-
-    <nav class="menu">
-
-        <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
-		<label for="menu-checkbox" class="menu__toggler"><img class="svg" src="images/svg/menu.svg" alt="menu"></label>
-
-        <ul class="menu__list">
-            <li class="menu__item"><a class="menu__link" href="#">Domů</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">O mně</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Hlídání dětí</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Péče o zvířata</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Reference</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Kontakt</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main class="main">
 
 <section class="childcare">
 
-        <img class="childcare__icon childcare__icon-boy" src="images/svg/kluk stojka.svg" alt="kluk ve stojce">
-        <img class="childcare__icon childcare__icon-girl" src="images/svg/holka.svg" alt="holka">
+        <img class="childcare__icon childcare__icon-boy" src="/images/svg/kluk stojka.svg" alt="kluk ve stojce">
+        <img class="childcare__icon childcare__icon-girl" src="/images/svg/holka.svg" alt="holka">
 
             
         <h2 class="childcare__title">Hlídání dětí</h2>
@@ -52,7 +19,7 @@
 
         <div class="childcare__item">
             <div class="childcare__photo">
-                <img class="childcare__image" src="images/kids/zaba.jpeg" alt="Anička s dítětem a žábou">
+                <img class="childcare__image" src="/images/kids/zaba.jpeg" alt="Anička s dítětem a žábou">
             </div>
 
             <div class="childcare__text">
@@ -65,7 +32,7 @@
         <div class="childcare__item">
 
             <div class="childcare__photo">
-                <img class="childcare__image" src="images/kids/snek.jpeg" alt="Anička ukazuje šneka">
+                <img class="childcare__image" src="/images/kids/snek.jpeg" alt="Anička ukazuje šneka">
             </div>
 
             <div class="childcare__text">
@@ -79,7 +46,7 @@
         <div class="childcare__item">
 
             <div class="childcare__photo">
-                <img class="childcare__image" src="images/kids/zahrada.jpeg" alt="Dítě pěstuje květiny">
+                <img class="childcare__image" src="/images/kids/zahrada.jpeg" alt="Dítě pěstuje květiny">
             </div>
 
             <div class="childcare__text">
@@ -92,7 +59,7 @@
         <div class="childcare__item">
 
             <div class="childcare__photo">
-                <img class="childcare__image" src="images/kids/vejce.jpeg" alt="Dítě barví vejce">
+                <img class="childcare__image" src="/images/kids/vejce.jpeg" alt="Dítě barví vejce">
             </div>
 
             <div class="childcare__text">
@@ -104,7 +71,7 @@
         <div class="childcare__item">
 
             <div class="childcare__photo">
-                <img class="childcare__image" src="images/kids/tele.jpeg" alt="Dítě hladí tele">
+                <img class="childcare__image" src="/images/kids/tele.jpeg" alt="Dítě hladí tele">
             </div>
 
             <div class="childcare__text">
@@ -116,7 +83,7 @@
         <div class="childcare__item">
 
             <div class="childcare__photo">
-                <img class="childcare__image" src="images/kids/kyticky.jpeg" alt="Ruce s kytičkama">
+                <img class="childcare__image" src="/images/kids/kyticky.jpeg" alt="Ruce s kytičkama">
             </div>
 
             <div class="childcare__text">
@@ -173,84 +140,54 @@
         <div class="childcare__gallery">
 
             <div class="childcare__gallery-item">
-                <img class="childcare__gallery-img" src="images/kids/Medvěd.jpeg" alt="Dítě pozoruje medvěda">
+                <img class="childcare__gallery-img" src="/images/kids/Medvěd.jpeg" alt="Dítě pozoruje medvěda">
             </div>
             
             <div class="childcare__gallery-item">
-                <img class="childcare__gallery-img" src="images/kids/pejsek.jpeg" alt="Dítě hladí pejska">
+                <img class="childcare__gallery-img" src="/images/kids/pejsek.jpeg" alt="Dítě hladí pejska">
             </div>
 
             <div class="childcare__gallery-item">
-                <img class="childcare__gallery-img" src="images/kids/rybky.jpeg" alt="Dítě pozoruje rybky">
+                <img class="childcare__gallery-img" src="/images/kids/rybky.jpeg" alt="Dítě pozoruje rybky">
             </div>
 
             <div class="childcare__gallery-item">
-                <img class="childcare__gallery-img" src="images/kids/barvy.jpeg" alt="Dítě si hraje s barvami">
+                <img class="childcare__gallery-img" src="/images/kids/barvy.jpeg" alt="Dítě si hraje s barvami">
             </div>
 
             <div class="childcare__gallery-item">
-                <img class="childcare__gallery-img" src="images/kids/za ruku.jpeg" alt="Anička jde za ruku s dítětem">
+                <img class="childcare__gallery-img" src="/images/kids/za ruku.jpeg" alt="Anička jde za ruku s dítětem">
             </div>
 
             <div class="childcare__gallery-item">
-                <img class="childcare__gallery-img" src="images/kids/knizka.jpeg" alt="Anička si čte s dítětem">
+                <img class="childcare__gallery-img" src="/images/kids/knizka.jpeg" alt="Anička si čte s dítětem">
             </div>
 
             <div class="childcare__gallery-item">
-                <img class="childcare__gallery-img" src="images/kids/strom.jpeg" alt="Dítě pozoruje turistickou značku">
+                <img class="childcare__gallery-img" src="/images/kids/strom.jpeg" alt="Dítě pozoruje turistickou značku">
             </div>
 
             <div class="childcare__gallery-item">
-                <img class="childcare__gallery-img" src="images/kids/slepice.jpeg" alt="Dítě pozoruje slepice">
+                <img class="childcare__gallery-img" src="/images/kids/slepice.jpeg" alt="Dítě pozoruje slepice">
             </div>
 
             <div class="childcare__gallery-item">
-                <img class="childcare__gallery-img" src="images/kids/deti.jpeg" alt="Děti si malují na chodníku">
+                <img class="childcare__gallery-img" src="/images/kids/deti.jpeg" alt="Děti si malují na chodníku">
             </div>
 
             <div class="childcare__gallery-item">
-                <img class="childcare__gallery-img" src="images/kids/deti2.jpeg" alt="Anička ukazuje dětem hmyz">
+                <img class="childcare__gallery-img" src="/images/kids/deti2.jpeg" alt="Anička ukazuje dětem hmyz">
             </div>
 
             <div class="childcare__gallery-item">
-                <img class="childcare__gallery-img" src="images/kids/potok.jpeg" alt="Dítě stojí u potoku">
+                <img class="childcare__gallery-img" src="/images/kids/potok.jpeg" alt="Dítě stojí u potoku">
             </div>
 
             <div class="childcare__gallery-item">
-                <img class="childcare__gallery-img" src="images/kids/chodnik.jpeg" alt="Dítě jde v lese po chodníku">
+                <img class="childcare__gallery-img" src="/images/kids/chodnik.jpeg" alt="Dítě jde v lese po chodníku">
             </div>
 
         </div>
 
 </section>
 
-</main>
-
-<footer class="footer">
-
-    <div class="footer__main">
-
-            <h2 class="footer__title">Kontakt</h2>
-
-            <p class="footer__contact">
-                Anna Nejedlá
-            </p>
-            <p class="footer__contact">
-                <span class="footer__contact-icone"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                +420 603 524 824
-            </p>
-            <p class="footer__contact">
-                <span class="footer__icone"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                <a class="footer__link" href="mailto:hlidani.tetickaanicka@gmail.com">hlidani.tetickaanicka@gmail.com</a>
-            </p>
-            <p class="footer__contact">
-                <span class="footer__icone"><i class="fa fa-instagram"></i></span>
-                <a class="footer__link" href="https://www.instagram.com/chuva_z_benesova?igsh=ZDRqdXBxb2YzeXlj">chuva_z_benesova</a>
-            </p>
-
-    </div>
-
-</footer>
-
-</body>
-</html>

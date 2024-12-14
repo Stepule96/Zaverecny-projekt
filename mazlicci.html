@@ -1,48 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tetička Anička</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    
-
-<!--Hlavička stránky-->
-
-<header class="header">
-
-    <a class="header__title" href="#">Tetička Anička</a>
-
-    <nav class="menu">
-
-        <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
-		<label for="menu-checkbox" class="menu__toggler"><img class="svg" src="images/svg/menu.svg" alt="menu"></label>
-
-        <ul class="menu__list">
-            <li class="menu__item"><a class="menu__link" href="#">Domů</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">O mně</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Hlídání dětí</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Péče o zvířata</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Reference</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Kontakt</a></li>
-        </ul>
-    </nav>
-</header>
-
-
-<main class="main">
+---
+layout: template.njk
+title: Péče o zvířata
+---
 
     <section class="petcare">
     
-        <img class="petcare__icon petcare__icon-sheep" src="images/svg/ovce.svg" alt="ovce">
-        <img class="petcare__icon petcare__icon-cat" src="images/svg/kocka.svg" alt="kočka">
+        <img class="petcare__icon petcare__icon-sheep" src="/images/svg/ovce.svg" alt="ovce">
+        <img class="petcare__icon petcare__icon-cat" src="/images/svg/kocka.svg" alt="kočka">
     
             <h2 class="petcare__title">Péče o zvířata</h2>
         
@@ -50,7 +14,7 @@
     
             <div class="petcare__item">
                 <div class="petcare__photo">
-                    <img class="petcare__image" src="images/animals/koza.jpeg" alt="S kozou">
+                    <img class="petcare__image" src="/images/animals/koza.jpeg" alt="S kozou">
                 </div>
     
                 <div class="petcare__text">
@@ -63,7 +27,7 @@
             <div class="petcare__item">
     
                 <div class="petcare__photo">
-                    <img class="petcare__image" src="images/animals/kocka2.jpeg" alt="Anička hladí kočku">
+                    <img class="petcare__image" src="/images/animals/kocka2.jpeg" alt="Anička hladí kočku">
                 </div>
     
                 <div class="petcare__text">
@@ -76,7 +40,7 @@
             <div class="petcare__item">
     
                 <div class="petcare__photo">
-                    <img class="petcare__image" src="images/animals/pole.jpeg" alt="Na poli">
+                    <img class="petcare__image" src="/images/animals/pole.jpeg" alt="Na poli">
                 </div>
     
                 <div class="petcare__text">
@@ -88,7 +52,7 @@
             <div class="petcare__item">
     
                 <div class="petcare__photo">
-                    <img class="petcare__image" src="images/animals/kocka.jpeg" alt="S kočkou">
+                    <img class="petcare__image" src="/images/animals/kocka.jpeg" alt="S kočkou">
                 </div>
     
                 <div class="petcare__text">
@@ -100,7 +64,7 @@
             <div class="petcare__item">
     
                 <div class="petcare__photo">
-                    <img class="petcare__image" src="images/animals/voda.jpeg" alt="Ve vodě">
+                    <img class="petcare__image" src="/images/animals/voda.jpeg" alt="Ve vodě">
                 </div>
     
                 <div class="petcare__text">
@@ -158,19 +122,19 @@
             <div class="petcare__gallery">
     
                 <div class="petcare__gallery-item">
-                    <img class="petcare__gallery-img" src="images/animals/pac.jpeg" alt="Pac">
+                    <img class="petcare__gallery-img" src="/images/animals/pac.jpeg" alt="Pac">
                 </div>
                 
                 <div class="petcare__gallery-item">
-                    <img class="petcare__gallery-img" src="images/animals/pes.jpeg" alt="Pes">
+                    <img class="petcare__gallery-img" src="/images/animals/pes.jpeg" alt="Pes">
                 </div>
     
                 <div class="petcare__gallery-item">
-                    <img class="petcare__gallery-img" src="images/animals/kocka3.jpeg" alt="kočka">
+                    <img class="petcare__gallery-img" src="/images/animals/kocka3.jpeg" alt="kočka">
                 </div>
     
                 <div class="petcare__gallery-item">
-                    <img class="petcare__gallery-img" src="images/animals/psi.jpeg" alt="Psi">
+                    <img class="petcare__gallery-img" src="/images/animals/psi.jpeg" alt="Psi">
                 </div>
     
                 
@@ -178,34 +142,4 @@
     
     </section>
     
-    </main>
-
-
-<footer class="footer">
-
-    <div class="footer__main">
-
-            <h2 class="footer__title">Kontakt</h2>
-
-            <p class="footer__contact">
-                Anna Nejedlá
-            </p>
-            <p class="footer__contact">
-                <span class="footer__contact-icone"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                +420 603 524 824
-            </p>
-            <p class="footer__contact">
-                <span class="footer__icone"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                <a class="footer__link" href="mailto:hlidani.tetickaanicka@gmail.com">hlidani.tetickaanicka@gmail.com</a>
-            </p>
-            <p class="footer__contact">
-                <span class="footer__icone"><i class="fa fa-instagram"></i></span>
-                <a class="footer__link" href="https://www.instagram.com/chuva_z_benesova?igsh=ZDRqdXBxb2YzeXlj">chuva_z_benesova</a>
-            </p>
-
-    </div>
-
-</footer>
-
-</body>
-</html>
+    

@@ -8,9 +8,11 @@
 
 //ÚVODNÍ OBRÁZEK//
 .intro{
+
     &__img{
         width: 100%;
         display: block;
+        
     }
 }
 
@@ -18,8 +20,8 @@
 
 .main-contents{
     display: grid;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin: 50px 30px 50px 30px;
+
 
     &__icon{
         display: none;

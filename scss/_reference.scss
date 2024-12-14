@@ -8,6 +8,8 @@
 
 .references{
     display: grid;
+    margin-left: 30px;
+    margin-right: 30px;
 
     &__title{
         font-family: fonts.$font-title;
