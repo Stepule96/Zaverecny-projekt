@@ -4,11 +4,12 @@
 
 .footer{
     background-color: colors.$c-header-background;
+    position: relative;
 
     &__main{
         text-align: center;
         color: colors.$c-text;
-        padding: 20px;
+        padding: 20px 20px 20px 30px;
     }
 
     &__title{
@@ -18,9 +19,11 @@
         margin: 0;
         font-family: fonts.$font-title;
         font-weight: bold;
-        
-        
-    }
+        @media screen and (min-width:1000px){
+            text-align: left;
+            padding-left: 10px;
+             
+    }}
     &__title::after{
         content: "";
         display: block;
@@ -28,6 +31,10 @@
         height: 2px;
         background-color: colors.$c-title;
         margin: 5px auto 0 auto;
+        @media screen and (min-width:1000px){
+            margin-left: 0;
+            
+        }
     
     }
 
@@ -37,6 +44,10 @@
         font-family: fonts.$font-text;
         font-size: 15px;
         font-weight: 500;
+        @media screen and (min-width:1000px){
+                text-align: left;
+                padding-left: 10px;
+            }
     }
 
     &__link{
@@ -46,17 +57,45 @@
     a:hover{
         color: colors.$c-box;
     }
-        
+    &__icon{
+        display: none;
+        position: absolute;
+
+        @media screen and (min-width:1000px){
+            display: inline-block;
+            
+            
+        }
+    }
+    &__icon-tree{
+        width: 100px;
+        right: 20px;
+        bottom: 20px;
+    }
+    &__icon-bike{
+        width: 70px;
+        right: 50px;
+        bottom: 20px;
+        transform: scaleX(-1);
+        transform-origin: left;
+
+    }
+    &__icon-flower{
+        width: 20px;
+        right: 210px;
+        bottom: 20px;
+    }
+    &__icon-butterfly{
+        width: 30px;
+        right:200px;
+        top: 60px;
+    }
+    &__icon-dragon{
+        width: 50px;
+        left:200px;
+        top: 30px;
+    }
+
 
 }
 
-@media screen and (min-width:1000px){
-    .footer__title,
-    .footer__contact{
-        text-align: left;
-        padding-left: 10px;
-    }
-    .footer__title::after{
-        margin-left: 0;
-    }
-}

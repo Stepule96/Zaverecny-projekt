@@ -14,16 +14,17 @@
 <body>
     
 
-<!--Hlavička stránky-->
+<!--Hlavička-->
 
 <header class="header">
 
     <a class="header__title" href="#">Tetička Anička</a>
+    <img src="">
 
     <nav class="menu">
 
         <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
-		<label for="menu-checkbox" class="menu__toggler"><img class="svg" src="images/svg/menu.svg" alt="menu"></label>
+        <label for="menu-checkbox" class="menu__toggler"><img class="svg" src="images/svg/menu.svg" alt="menu"></label>
 
         <ul class="menu__list">
             <li class="menu__item"><a class="menu__link" href="#">Domů</a></li>
@@ -37,7 +38,8 @@
 </header>
 
 
-<!--Začátek obsahu stránky-->
+
+<!--Úvodní obrázek(jen úvodní strana)-->
 
 <div class="intro">
     <img class="intro__img" src="images/uvodni.jpg" alt="Úvodní fotka">
@@ -46,9 +48,21 @@
 
 <main class="main">
 
-    <section class="main-contents">
+<!--Hlavní obsah-->  
 
-         <section class="introtext">
+<section class="main-contents">
+
+    <img class="main-contents__icon main-contents__icon-girl" src="images/svg/holka.svg" alt="Holka">
+    <img class="main-contents__icon main-contents__icon-girl2" src="images/svg/skakajici holka.svg" alt="Skákající holka">
+    <img class="main-contents__icon main-contents__icon-boy2" src="images/svg/skakajici kluk.svg" alt="Skákající kluk">
+    <img class="main-contents__icon main-contents__icon-cat" src="images/svg/kocka.svg" alt="Kočka">
+    <img class="main-contents__icon main-contents__icon-tree" src="images/svg/jehlicnaty strom.svg" alt="Jehličnatý strom">
+    <img class="main-contents__icon main-contents__icon-balloon" src="images/svg/balonek.svg" alt="Balónek">
+
+
+<!--Sekce Úvod-->    
+
+     <section class="introtext">
                 <div class="introtext__title">
                      <h2>Milí rodiče, vítejte na stránkách věnovaných péči o vaše nejmenší i vaše zvířecí kamarády!</h2>
                  </div>
@@ -56,10 +70,12 @@
                 <div class="introtext__description">
                     <p>Jsem Anička, profesionální chůva a milovnice přírody, která se s láskou stará o děti i domácí mazlíčky. 
                          Díky bohatým zkušenostem z dětských táborů, zdravotnickému vzdělání a hlubokému vztahu k přírodě nabízím bezpečné, láskyplné a inspirující prostředí pro rozvoj vašich dětí i pohodu vašich zvířat. Vaše děti i mazlíčci u mě najdou péči plnou radosti, a prostor pro to, aby byly samy sebou. Těším se na setkání a společné zážitky!</p>
-                    <img class="introtext__icon introtext__icon--frog" src="images/svg/zabka.svg" alt="zabka">
-                    <img class="introtext__icon introtext__icon--snail" src="images/svg/snek.svg" alt="snek">
+    
+                    <img class="introtext__icon introtext__icon-frog" src="images/svg/zabka.svg" alt="Žabka">
+                    <img class="introtext__icon introtext__icon-snail" src="images/svg/snek.svg" alt="Šnek">
+                
                 </div>
-        </section>
+    </section>
 
 <!--Sekce Služby-->
 
@@ -68,21 +84,21 @@
         <h2 class="services__title">Co nabízím</h2>
 
             <div class="services__list">
-                <div class="services__item">
-                    <img class="services__image" src="images/kids/v lese.png" alt="hlidani deti">
+                <div class="services__item-kids">
+                    <img class="services__image" src="images/kids/v lese.png" alt="Anička s dětmi v lese">
                     <h3 class="services__name">Hlídání dětí</h3>
                 </div>
                 
-                <div class="services__button">
+                <div class="services__button-kids">
                     <a class="button button-first" href="#">Více informací</a>
                 </div>
 
-                <div class="services__item">
-                    <img class="services__image" src="images/animals/anicka a pes.jpeg" alt="pece o zvirata">
+                <div class="services__item-animals">
+                    <img class="services__image" src="images/animals/anicka a pes.jpeg" alt="Anička se psem">
                     <h3 class="services__name">Péče o zvířata</h3>
                 </div>
                 
-                <div class="services__button">
+                <div class="services__button-animals">
                 <a class="button button-second" href="#">Více informací</a>
                 </div>
      </section>
@@ -117,12 +133,16 @@
 
     </section>
 
-    </section>
+   
+
+
+</section>
+
 </main>
 
 
 
-
+<!--Patička-->
 
 <footer class="footer">
 
@@ -145,6 +165,12 @@
                 <span class="footer__icone"><i class="fa fa-instagram"></i></span>
                 <a class="footer__link" href="https://www.instagram.com/chuva_z_benesova?igsh=ZDRqdXBxb2YzeXlj">chuva_z_benesova</a>
             </p>
+
+            <img class="footer__icon footer__icon-tree" src="images/svg/listnaty strom.svg" alt="Listnatý strom">
+            <img class="footer__icon footer__icon-bike" src="images/svg/kluk na kole.svg" alt="Kluk na kole">
+            <img class="footer__icon footer__icon-flower" src="images/svg/kytka 2.svg" alt="Kytička">
+            <img class="footer__icon footer__icon-butterfly" src="images/svg/motyl.svg" alt="Motýl">
+            <img class="footer__icon footer__icon-dragon" src="images/svg/drak.svg" alt="Drak">
 
     </div>
 

@@ -6,6 +6,8 @@
 
 .header{
     background-color: colors.$c-header-background;
+    
+
 
     &__title{
         font-family: fonts.$font-title;
@@ -15,8 +17,8 @@
         color: colors.$c-text;
         display: inline-block;
         padding: 15px 30px;
-    }
-}
+    }}
+
 
 .svg{
     width: 25px;
@@ -42,7 +44,7 @@
 
 .menu__item{
     border-bottom: 1px solid colors.$c-text;
-    padding: 5px 0;
+    padding: 15px 0;
     background-color: colors.$c-header-background;
 }
 
@@ -71,6 +73,7 @@
     .menu__list{
         display: flex !important;
         justify-content: space-around;
+        padding-right: 20px;
         
     }
     .header__title{
@@ -81,7 +84,10 @@
         
     }
     .menu{
-        flex-basis: 45%;
+        flex-basis: 50%;
+        @media screen and (min-width: 1200px){
+            flex-basis: 40%;
+        }
         
     }
 

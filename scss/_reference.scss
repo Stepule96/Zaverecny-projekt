@@ -7,12 +7,12 @@
 
 
 .references{
+    display: grid;
 
     &__title{
         font-family: fonts.$font-title;
         text-align: center;
-        font-size: 30px;
-        margin-bottom: 30px;
+        font-size: 35px;
         color: colors.$c-title;
     
     }
@@ -29,9 +29,14 @@
         background-color: colors.$c-box;
         border-radius: border.$ref-radius;
         width: 100%;
-        margin: 20px auto;
         border: border.$box-border;
         box-shadow: border.$box-shadow;
+        @media screen and (min-width:1200px){
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
        
     }
     &__text{
@@ -49,5 +54,29 @@
         padding: 5px 15px 15px 0;
         margin: 0;
     }
-    
+    &__list{
+        display: grid;
+        gap: 1rem;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width:1200px){
+        grid-template-columns: 5% 4fr 5%;
+        grid-template-rows: 1fr auto auto;
+        margin-bottom: 30px;
+        
+        &__title{
+            grid-column: 2;
+            grid-row: 1;
+        }
+        &__list{
+            grid-column: 2;
+            grid-row: 2;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 2rem;
+            width: 100%;
+        }
+        
+
+    }
 }

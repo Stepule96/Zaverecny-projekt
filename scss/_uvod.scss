@@ -18,9 +18,61 @@
 
 .main-contents{
     display: grid;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+    &__icon{
+        display: none;
+        @media screen and (min-width: 1000px){
+            display: block;
+            position: absolute;
+        }
+    }
+    
+    @media screen and (min-width: 1000px){
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: auto auto auto;
+    position: relative;
+    }
+
+    &__icon-girl2{
+        right: 5%;
+        top:3%;
+        width: 70px;
+    }
+    &__icon-cat{
+        width: 100px;
+    }
+    &__icon-girl{
+        left: 10%;
+        width: 70px;
+        bottom: 40%;
+    }
+    &__icon-boy2{
+        right: 5%;
+        bottom: 5%;
+        width: 70px;
+    }
+    &__icon-cat{
+        right: 10%;
+        top: 45%;
+        width: 80px;
+    }
+    &__icon-tree{
+        left: 8%;
+        top: 7%;
+        width: 50px;
+    }
+
+    &__icon-balloon{
+        left: 5%;
+        bottom: 5%;
+        width: 30px;
+    }
+
+    
 }
+
 
 .introtext{
         background-color: colors.$c-box;
@@ -32,8 +84,9 @@
         display: grid;
 
         @media screen and (min-width: 1000px){
-            width: 70%;
-
+            grid-column: 2 / 3 ;
+            grid-row: 1 / 2;
+            
         }
 
     &__description{
@@ -46,6 +99,7 @@
 
         p{
             margin: 0;
+
         }
 
         @media screen and (min-width: 1000px){
@@ -72,10 +126,26 @@
         display: none;
         @media screen and (min-width: 1000px){
             display: block;
-            width: 70px;
+            width: 50px;
+
 
         }
     }
+    &__icon-frog{
+        @media screen and (min-width: 1000px){
+            float: left;
+            margin-right: 10px;
+        
+        }
+    }
+    &__icon-snail{
+        @media screen and (min-width: 1000px){
+            float: right;
+            margin-left: 10px;
+
+        }
+    }
+   
 
 }
 
@@ -83,14 +153,28 @@
 //SLUŽBY//
 
 .services{
+    @media screen and (min-width: 1000px){
+
+        grid-column: 2 / 3 ;
+        grid-row: 2 / 3;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        
+
+    }
 
     &__title{
         text-align: center;
-        font-size: 30px;
+        font-size: 35px;
         font-family: fonts.$font-title;
         color: colors.$c-title;
         margin-bottom: 30px;
         margin-top: 30px;
+        @media screen and (min-width: 1000px){
+            text-align: left;
+            margin-top: 0;
+        }
+       
     }
     &__title::after{
         content: "";
@@ -99,6 +183,10 @@
         height: 2px;
         background-color: colors.$c-title;
         margin: 5px auto 0 auto;
+        @media screen and (min-width: 1000px){
+            margin: 0;
+            justify-self: start;
+        }
     }
     
     &__image{
@@ -107,7 +195,8 @@
         height: auto;
     
     }
-    &__item{
+    &__item-kids,
+    &__item-animals{
         background-color: colors.$c-box;
         margin:auto;
         border-radius: border.$box-radius;
@@ -122,27 +211,78 @@
         margin: 0;
         text-align: center;
         padding: 6px;
-        font-size: 23px;
+        font-size: 28px;
+        @media screen and (min-width: 1000px){
+            padding: 10px 0 10px 0;
+        }
     }
-    &__button{
+    &__button-kids,
+    &__button-animals{
         margin: auto;
         text-align: center;
         margin-top: 20px;
     }
+    &__list{
+        @media screen and (min-width: 1000px){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            column-gap: 5rem;
+            row-gap: 2rem;
+            width: 55vw;
+            margin: 0 auto;
+        
+        
+        }
+    }
+    &__item-animals{
+        @media screen and (min-width: 1000px){
+            grid-column: 2;
+            grid-row: 1;
+            
+        }
+    }
+    &__button-kids{
+        @media screen and (min-width: 1000px){
+            grid-column: 1;
+            grid-row: 2;
+            margin-top: 0;
+        }
+    }
+    &__button-animals{
+        @media screen and (min-width: 1000px){
+            margin-top: 0;
+        }
+    }
+    &__button-kids{
+        margin-bottom: 20px;
+    }
 
 }
+
 
 
 //REFERENCE
 
 .home-references{
 
+    @media screen and (min-width: 1000px){
+        grid-column: 2 / 3 ;
+        grid-row: 3 / 3;
+    }
+
     &__title{
         font-family: fonts.$font-title;
         text-align: center;
-        font-size: 30px;
+        font-size: 35px;
         margin-bottom: 30px;
         color: colors.$c-title;
+        @media screen and (min-width: 1000px){
+            margin-top: 0;
+            text-align: left;
+            margin-top: 0;
+            
+        }
     
     }
     &__title::after{
@@ -152,6 +292,10 @@
         height: 2px;
         background-color: colors.$c-title;
         margin: 5px auto 0 auto;
+        @media screen and (min-width: 1000px){
+            margin: 0;
+            justify-self: start;
+        }
         
     
     }
@@ -162,6 +306,15 @@
         margin: 20px auto;
         border: border.$box-border;
         box-shadow: border.$box-shadow;
+        @media screen and (min-width: 1200px){
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+
+            
+        }
        
     }
     &__text{
@@ -171,6 +324,10 @@
         margin: 0;
         line-height: 1.4;
         font-style: italic;
+        @media screen and (min-width: 1200px){
+            font-size: 17px;
+        }
+
     }
 
     &__name{
@@ -178,12 +335,38 @@
         text-align: right;
         padding: 5px 15px 15px 0;
         margin: 0;
+        @media screen and (min-width: 1200px){
+            font-size: 15px;
+        }
+
     }
 
     &__button{
         margin: auto;
         text-align: center;
         margin-top: 20px;
+        @media screen and (min-width: 1000px){
+            grid-column: 3;
+            grid-row: 2;
+            margin-top: 0;  
+            justify-self: end;
+            margin: 0;
+  
+        }
     }
+    &__list{
+       
+        @media screen and (min-width: 1200px){
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 2rem;
+
+            
+
+        }
+    }
+    
+    
     
 }
