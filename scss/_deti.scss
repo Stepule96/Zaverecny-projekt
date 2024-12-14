@@ -9,6 +9,9 @@
 .childcare{
     display: grid;
     margin-bottom: 30px;
+    @media screen and (min-width:1000px){
+        position: relative;
+    }
 
     &__title{
         font-family: fonts.$font-title;
@@ -181,5 +184,23 @@
 
         }
     }
+    &__icon{
+        display: none;
+        @media screen and (min-width:1000px){
+            display: inline-block;
+            width: 50px;
+            position: absolute;
+            
+        }
+    } 
+    &__icon-boy{
+        right: 200px;
+        top: 20px;
+    }
+    &__icon-girl{
+        left: 100px;
+        top: 500px;
+    }
+  
 
 }

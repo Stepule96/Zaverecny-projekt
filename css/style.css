@@ -809,6 +809,11 @@
   display: grid;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1000px) {
+  .childcare {
+    position: relative;
+  }
+}
 .childcare__title {
   font-family: "Amatic SC", sans-serif;
   text-align: center;
@@ -974,10 +979,33 @@
     min-width: 150px;
   }
 }
+.childcare__icon {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .childcare__icon {
+    display: inline-block;
+    width: 50px;
+    position: absolute;
+  }
+}
+.childcare__icon-boy {
+  right: 200px;
+  top: 20px;
+}
+.childcare__icon-girl {
+  left: 100px;
+  top: 500px;
+}
 
 .petcare {
   display: grid;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1000px) {
+  .petcare {
+    position: relative;
+  }
 }
 .petcare__title {
   font-family: "Amatic SC", sans-serif;
@@ -1143,6 +1171,24 @@
     max-width: 300px;
     min-width: 150px;
   }
+}
+.petcare__icon {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .petcare__icon {
+    display: inline-block;
+    width: 70px;
+    position: absolute;
+  }
+}
+.petcare__icon-cat {
+  right: 200px;
+  top: 30px;
+}
+.petcare__icon-sheep {
+  left: 100px;
+  top: 500px;
 }
 
 html {
